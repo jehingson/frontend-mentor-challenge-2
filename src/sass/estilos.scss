@@ -1,3 +1,70 @@
+@import "./header.scss";
+@import "./hero.scss";
+
+
+:root{
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+    --lighGray: #e5e5e5;
+    font-size: 18px;
+}
+
 body{
-    background: rgb(7, 24, 6);
+    font-family: 'Rubik', sans-serif;
+    color: var(--GrayishBlue);
+}
+.wrapper{
+    max-width: 1280px;
+    padding: 0 1em;
+    margin: auto;
+}
+.copy{
+    line-height: 1.7;
+    font-size: .8em;
+}
+@mixin  title {
+    font-size: 2,5em;
+    color: var(--VeryDarkBlue);
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+    margin-bottom: .5em;
+}
+.title{
+    &__h1{
+        @include title;
+    }
+    &__h2{
+        @include title;
+        font-size: 1.5em;
+    }
+    &__h3{
+        @include title;
+        font-size: 1em;
+    }
+}
+@mixin  boton {
+    border: none;
+    padding: .9em .8em;
+    font-size: .8em;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    background: var(--SoftBlue);
+}
+.boton{
+    &__blue{
+        @include boton;
+    }
+    &__white{
+        @include boton;
+        color: var(--VeryDarkBlue);
+        font-weight: 600;
+        background: #f3f3f3;
+        box-shadow:  7px 7px 14px #dddddd, 
+                    -7px -7px 14px #ffffff;
+        
+    }
 }

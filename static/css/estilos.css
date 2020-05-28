@@ -1,5 +1,130 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em;
+}
+.header img {
+  align-self: center;
+}
+
+.hero {
+  width: 100%;
+}
+.hero__imagen {
+  padding-top: 2em;
+  width: 105%;
+  height: 200px;
+}
+.hero__fondo {
+  background: var(--SoftBlue);
+  height: 155px;
+  width: 75%;
+  position: absolute;
+  left: 25%;
+  top: 8.5em;
+  border-bottom-left-radius: 40%;
+  z-index: -1;
+}
+.hero__content {
+  text-align: center;
+  padding: 2em 1em;
+}
+.hero__boton {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+}
+@media screen and (min-width: 500px) {
+  .hero .hero__imagen {
+    height: 230px;
+  }
+  .hero .hero__fondo {
+    height: 175px;
+    top: 9em;
+  }
+}
+@media screen and (min-width: 600px) {
+  .hero .hero__imagen {
+    height: 270px;
+  }
+  .hero .hero__fondo {
+    height: 215px;
+  }
+}
+
+:root {
+  --SoftBlue: hsl(231, 69%, 60%);
+  --SoftRed: hsl(0, 94%, 66%);
+  --GrayishBlue: hsl(229, 8%, 60%);
+  --VeryDarkBlue: hsl(229, 31%, 21%);
+  --lighGray: #e5e5e5;
+  font-size: 18px;
+}
+
 body {
-  background: #071806;
+  font-family: "Rubik", sans-serif;
+  color: var(--GrayishBlue);
+}
+
+.wrapper {
+  max-width: 1280px;
+  padding: 0 1em;
+  margin: auto;
+}
+
+.copy {
+  line-height: 1.7;
+  font-size: 0.8em;
+}
+
+.title__h1 {
+  font-size: 2, 5em;
+  color: var(--VeryDarkBlue);
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+.title__h2 {
+  font-size: 2, 5em;
+  color: var(--VeryDarkBlue);
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+.title__h3 {
+  font-size: 2, 5em;
+  color: var(--VeryDarkBlue);
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+.boton__blue {
+  border: none;
+  padding: 0.9em 0.8em;
+  font-size: 0.8em;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  background: var(--SoftBlue);
+}
+.boton__white {
+  border: none;
+  padding: 0.9em 0.8em;
+  font-size: 0.8em;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  background: var(--SoftBlue);
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+  background: #f3f3f3;
+  box-shadow: 7px 7px 14px #dddddd, -7px -7px 14px #ffffff;
 }
 
 /*# sourceMappingURL=estilos.css.map */
