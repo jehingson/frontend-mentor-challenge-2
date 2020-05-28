@@ -1,5 +1,6 @@
 @import "./header.scss";
 @import "./hero.scss";
+@import "./features.scss";
 
 
 :root{
@@ -14,6 +15,7 @@
 body{
     font-family: 'Rubik', sans-serif;
     color: var(--GrayishBlue);
+    min-width: 370px;
 }
 .wrapper{
     max-width: 1280px;
@@ -23,6 +25,9 @@ body{
 .copy{
     line-height: 1.7;
     font-size: .8em;
+}
+.hidde{
+    display: none;
 }
 @mixin  title {
     font-size: 2,5em;

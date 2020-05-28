@@ -12,7 +12,7 @@
 }
 .hero__imagen {
   padding-top: 2em;
-  width: 105%;
+  width: 100%;
   height: 200px;
 }
 .hero__fondo {
@@ -30,9 +30,10 @@
   padding: 2em 1em;
 }
 .hero__boton {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0.5em;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 1em;
+  justify-content: center;
 }
 @media screen and (min-width: 500px) {
   .hero .hero__imagen {
@@ -52,6 +53,49 @@
   }
 }
 
+.features {
+  text-align: center;
+  padding: 4em 1em 2em;
+  overflow-x: hidden;
+}
+.features__ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em 0;
+}
+.features__li {
+  align-self: center;
+  padding: 1em 0 0.5em 0;
+  border-top: 1px solid var(--lighGray);
+}
+.features__li:last-of-type {
+  border-bottom: 1px solid var(--lighGray);
+}
+.features__a {
+  text-decoration: none;
+}
+.features__a hr {
+  width: 40%;
+  position: absolute;
+  border: none;
+  left: 31%;
+  height: 4px;
+  margin-top: 4px;
+  background: var(--SoftRed);
+  color: var(--SoftRed);
+  display: none;
+}
+.features .title__h3 {
+  color: var(--GrayishBlue);
+  font-weight: 300;
+}
+.features__li:hover .title__h3 {
+  color: var(--VeryDarkBlue);
+}
+.features__li:hover hr {
+  display: block;
+}
+
 :root {
   --SoftBlue: hsl(231, 69%, 60%);
   --SoftRed: hsl(0, 94%, 66%);
@@ -64,6 +108,7 @@
 body {
   font-family: "Rubik", sans-serif;
   color: var(--GrayishBlue);
+  min-width: 370px;
 }
 
 .wrapper {
@@ -75,6 +120,10 @@ body {
 .copy {
   line-height: 1.7;
   font-size: 0.8em;
+}
+
+.hidde {
+  display: none;
 }
 
 .title__h1 {

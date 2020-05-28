@@ -7,8 +7,9 @@
     }
     &__imagen{
         padding-top: 2em ;
-        width: 105%;
+        width: 100%;
         height: 200px;
+        //border: 1px solid blue;
     }
     &__fondo{
         background: var(--SoftBlue);
@@ -27,9 +28,11 @@
         padding: 2em 1em;
     }
     &__boton{
-        display: flex;
-        justify-content: space-between;
-        padding-top: .5em;
+        display: grid;
+        grid-template-columns: 140px 140px;
+        column-gap: 1em;
+        justify-content: center;
+       
     }
     @media screen and (min-width: 500px){
         .hero{
