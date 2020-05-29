@@ -1,44 +1,79 @@
 .features{
     text-align: center;
     padding: 4em 1em 2em;
+
+   // border: 1px solid red; 
+}
+
+.tabs{
+    //border: 1px solid blue;
     overflow-x: hidden;
-    &__ul{
-        list-style: none;
-        margin: 0;
-        padding: 1em 0;
+    margin-top: 2em;
+    border-top: 1px solid var(--lighGray);
+    &__link{
+        border-bottom: 1px solid var(--lighGray);
     }
-    &__li{
-        align-self: center;
-        padding: 1em 0 .5em 0;
-        border-top: 1px solid var(--lighGray);
-        &:last-of-type{
-            border-bottom: 1px solid var(--lighGray);
+    &__content{
+        display: none;
+        flex-direction: column;
+        img{
+            max-width: 100%;
+            margin-bottom: 1.5em;
         }
     }
-    &__a{
-        text-decoration: none;
-        hr{
-        width: 40%;
-        position: absolute;
-        border: none;
-        left: 31%;
-        height: 4px;
-        margin-top: 4px;
-        background: var(--SoftRed);
-        color: var(--SoftRed);
-        display: none;
-        }     
+    &__grid{
+        margin-top: 4em;
     }
-    .title__h3{
-        color: var(--GrayishBlue);
-        font-weight: 300;
+    ul{
+        padding: 0em;
+        margin: 0em;
     }
-    &__li:hover .title__h3{
-        color: var(--VeryDarkBlue);
+    li{
+        list-style: none;
     }
-    &__li:hover hr{
+    label{
+        padding: 1em 0 ;
         display: block;
+        position: relative;
+        cursor: pointer;
+        
+        &:after{
+            display: none;
+            content: "";
+            height: 5px;
+            position: absolute;
+            bottom: 0;
+            width: 50%;
+            left: 0;
+            transform: translateX(50%);
+            box-shadow: inset 0 -15px 0px -10px var(--SoftRed);
+        }
     }
-    
-   
+    input{
+        display: none;
+    }
+    input[id="bookmarking"]:checked{
+        & ~ ul [for="bookmarking"]:after{
+            display: block;
+        }
+        & ~ .tabs__grid #tab-bookmarking{
+            display: block;
+        } 
+    }
+    input[id="speendy"]:checked{
+        & ~ ul [for="speendy"]:after{
+            display: block;
+        }
+        & ~ .tabs__grid #tab-speendy{
+            display: block;
+        }
+    }
+    input[id="easy"]:checked{
+        & ~ ul [for="easy"]:after{
+            display: block;
+        }
+        & ~ .tabs__grid #tab-easy{
+            display: block;
+        }
+    }
 }

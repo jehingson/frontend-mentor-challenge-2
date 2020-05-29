@@ -1,0 +1,53 @@
+.quiestions{
+
+        &__content{
+            
+        text-align: center;
+        }
+        .carousel{
+            ul{
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+              }
+              &__click{
+                  //border: 1px solid red;
+                  display: grid;
+                  grid-template-columns: auto 25px;
+                  grid-template-rows: auto auto;
+                  border-bottom: 1px solid var(--lighGray);
+                  .copy2{
+                      color: var(--VeryDarkBlue);
+                      //border: 1px solid red;
+                  }
+                  label{
+                    align-self: center;
+                    justify-self: end;
+                  }
+                  svg{
+                      cursor: pointer;
+                  }
+              }
+              &__hidden{
+                  display: none;
+                  grid-column: 1/3;  
+              }
+              input{
+                  display: none;
+              }
+              input[id="what"]:checked ~ * #what-hidden{
+                display: block;
+              }
+              input[id="how"]:checked ~ * #how-hidden{
+                display: block;
+              } 
+              input[id="app"]:checked ~ * #app-hidden{
+                display: block;
+              } 
+              input[id="other"]:checked ~ * #other-hidden{
+                display: block;
+              }  
+              }
+        }
+       
+       

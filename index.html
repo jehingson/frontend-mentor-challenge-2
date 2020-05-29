@@ -17,14 +17,15 @@
     <section class="hero">
         <div class="wrapper">
             <div class="hero__imagenContent">
-                <img class="hero__imagen" src="./static/images/illustration-hero.svg" alt="">
+                <img width="100%" height="70%" class="hero__imagen" src="./static/images/illustration-hero.svg" alt="">
                 <div class="hero__fondo"></div>
             </div>
             <div class="hero__content">
                 <h1 class="title__h1">
                     A Simple Bookmark Manager
                 </h1>
-                <p class="copy">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <p class="copy">A clean and simple interface to organize your favourite websites. Open a new browser tab
+                    and see your sites load instantly. Try it for free.</p>
                 <div class="hero__boton">
                     <button class="boton__blue">
                         Get it on Chrome
@@ -36,40 +37,225 @@
             </div>
 
         </div>
-       
+
     </section>
     <section class="features">
         <div class="wrapper">
-            <h1 class="title__h1">
+            <h1 class="title__h2">
                 Features
-            </h1>   
+            </h1>
             <p class="copy">
-                Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
-            </p> 
-            <ul class="features__ul">
-              
-                <li class="features__li">
-                    <a href="#" class="features__a">
-                        <h3 class="title__h3"> Simple Bookmarking </h3>
-                        <hr>
-                    </a>
-                </li>
-                <li class="features__li">
-                    <a href="#" class="features__a">
-                        <h3 class="title__h3"> Speedy Searching</h3>
-                        <hr>
-                    </a>
-                </li>
-                <li class="features__li">
-                    <a href="#" class="features__a">
-                        <h3 class="title__h3"> Simple Bookmarking </h3>
-                        <hr>
-                    </a>
-                </li>
-            </ul>
+                Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync
+                between your devices so you can access them on the go.
+            </p>
+            <div class="tabs">
+                <input type="radio" value="bookmarking" name="tabs" id="bookmarking" checked>
+                <input type="radio" value="speendy" name="tabs" id="speendy" checked>
+                <input type="radio" value="easy" name="tabs" id="easy" checked>
+                <ul>
+                    <li class="tabs__link">
+                        <label for="bookmarking" id="uno">
+                            Simple Bookmarking
+                        </label>
+                    </li>
+                    <li class="tabs__link">
+                        <label for="speendy">
+                            Speedy Searching
+                        </label>
+                    </li>
+                    <li class="tabs__link">
+                        <label for="easy">
+                            Simple Bookmarking
+                        </label>
+                    </li>
+                </ul>
+                <div class="tabs__grid">
+                    <div class="tabs__content" id="tab-bookmarking">
+                        <img src="./static/images/illustration-features-tab-1.svg" alt="">
+                        <h2 class="title__h2">
+                            Bookmark in one click
+                        </h2>
+                        <p class="copy">
+                            Organice your bookmarks however you like. our simple drag-and-drop interface gives you
+                            complete control aver how you manage your favourite sites.
+                        </p>
+                        <button class="boton__blue">
+                            More info
+                        </button>
+                    </div>
+                    <div class="tabs__content" id="tab-speendy">
+                        <img src="./static/images/illustration-features-tab-2.svg" alt="">
+                        <h2 class="title__h2">
+                            Intelligent search
+                        </h2>
+                        <p class="copy">
+                            our powerful search feature will help you find saved sites in no time at all. No need to
+                            trawl through all of your bookmarks.
+                        </p>
+                        <button class="boton__blue">
+                            More info
+                        </button>
+                    </div>
+                    <div class="tabs__content" id="tab-easy">
+                        <img src="./static/images/illustration-features-tab-3.svg" alt="">
+                        <h2 class="title__h2">
+                            Share your bookmarks
+                        </h2>
+                        <p class="copy">
+                            Easily share your bookmarks and collections with others. Create a shareable link that you
+                            can send at the click of a buttun.
+                        </p>
+                        <button class="boton__blue">
+                            More info
+                        </button>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
+    <section class="download">
 
+        <div class="wrapper">
+            <h2 class="title__h2">
+                Download the extension
+            </h2>
+            <p class="copy" style="padding-bottom: 1em;">
+                we've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us
+                to prioritize.
+            </p>
+            <div class="download__content">
+                <img src="./static/images/logo-chrome.svg" alt="">
+                <h2 class="title__h2">
+                    Add to Chrome
+                </h2>
+                <p class="copy">
+                    Minimum version 62
+                </p>
+                <img src="./static/images/bg-dots.svg">
+                <button class="boton__blue" style="padding: 1em 2em;">
+                    Add & install extension
+                </button>
+            </div>
+            <div class="download__content">
+                <img src="./static/images/logo-firefox.svg" alt="">
+                <h2 class="title__h2">
+                    Add to Firefox
+                </h2>
+                <p class="copy">
+                    Minimum version 55
+                </p>
+                <img src="./static/images/bg-dots.svg">
+                <button class="boton__blue" style="padding: 1em 2em;">
+                    Add & install extension
+                </button>
+            </div>
+            <div class="download__content">
+                <img src="./static/images/logo-opera.svg" alt="">
+                <h2 class="title__h2">
+                    Add to Opera
+                </h2>
+                <p class="copy">
+                    Minimum version 46
+                </p>
+                <img src="./static/images/bg-dots.svg">
+                <button class="boton__blue" style="padding: 1em 2em;">
+                    Add & install extension
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="quiestions">
+        <div class="wrapper">
+            <div class="quiestions__content">
+                <h2 class="title__h1">Frequently Asked Questions</h2>
+                <p class="copy">
+                    Here are some of our FAOs. If you have any other questions you'd
+                    like answered please feel free to email us.
+                </p>
+            </div>
+            <div class="carousel">
+                <input type="radio" id="what" value="what" name="carousel" checked>
+                <input type="radio" id="how" value="how" name="carousel" checked>
+                <input type="radio" id="app" value="app" name="carousel" checked>
+                <input type="radio" id="other" value="other" name="carousel" checked>
+                <input type="radio" id="or" value="or" name="carousel" checked>
+                <ul>
+                    <li class="carousel__click">
+                        <p class="copy copy2">What is Bookmark</p>
+                        <label for="what">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                                <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" /></svg>
+                        </label>
+                        <div class="carousel__hidden" id="what-hidden">
+                            <p class="copy">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fusce tincidunt justo eget
+                                ulticie fringilla. Phasellus blacdit ipsum quis quam ornare mattis.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="carousel__click">
+                        <p class="copy copy2">How can i request a new browser?</p>
+                        <label for="how">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                                <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" /></svg>
+                        </label>
+                        <div class="carousel__hidden" id="how-hidden">
+                            <p class="copy">
+                                Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="carousel__click">
+                        <p class="copy copy2">Is there a mobile app?</p>
+                        <label for="app">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                                <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" /></svg>
+                        </label>
+                        <div class="carousel__hidden" id="app-hidden">
+                            <p class="copy">
+                                Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+                                urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                                sollicitudin ex et ultricies bibendum.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="carousel__click">
+                        <p class="copy copy2">What about other Chromium browsers?</p>
+                        <label for="other">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                                <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" /></svg>
+                        </label>
+                        <div class="carousel__hidden" id="other-hidden">
+                            <p class="copy">
+                                Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+                                vitae neque eget nisl gravida pellentesque non ut velit.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="quiestions__content">
+                    <button class="boton__blue" style="margin: 3em 0;">
+                        More info
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="join">
+        <div class="wrapper">
+            <small>35,000+ already joine</small>
+            <h4 class="title__h3">
+                Stay up-to-date with what we're doing
+            </h4>
+            <form action="" class="form">
+                <input placeholder="Enter your email address" type="text" class="form__input">
+                <button class="boton__blue" style="background: #fa5757;">
+                Contact Us
+            </button>
+            </form>
+        </div>
+    </section>
 
 </body>
 

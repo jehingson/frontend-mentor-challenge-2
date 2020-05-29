@@ -1,11 +1,14 @@
 @import "./header.scss";
 @import "./hero.scss";
 @import "./features.scss";
+@import "./download.scss";
+@import "./quiestions.scss";
+@import "./join.scss";
 
 
 :root{
     --SoftBlue: hsl(231, 69%, 60%);
-    --SoftRed: hsl(0, 94%, 66%);
+    --SoftRed: #fa5757;
     --GrayishBlue: hsl(229, 8%, 60%);
     --VeryDarkBlue: hsl(229, 31%, 21%);
     --lighGray: #e5e5e5;
@@ -43,7 +46,7 @@ body{
     }
     &__h2{
         @include title;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     &__h3{
         @include title;
@@ -54,8 +57,9 @@ body{
     border: none;
     padding: .9em .8em;
     font-size: .8em;
+    cursor: pointer;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
     border-radius: 5px;
     background: var(--SoftBlue);
 }
@@ -70,6 +74,5 @@ body{
         background: #f3f3f3;
         box-shadow:  7px 7px 14px #dddddd, 
                     -7px -7px 14px #ffffff;
-        
     }
 }

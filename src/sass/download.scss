@@ -1,0 +1,22 @@
+.download{
+    text-align: center;
+    padding: 4em 1em;
+    //border: 1px solid red;
+    &__content{
+        flex: 1;
+        //border: 1px solid blue;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        margin-top: 2em;
+        border-radius: 18px;
+background: #fafafa;
+box-shadow:  7px 7px 14px #f3f3f3, 
+             7px 7px 14px #ffffff;
+        p{
+            padding-bottom: 1.4em;
+        }
+        img{
+            padding-bottom: 1em;
+        }
+    }
+}
