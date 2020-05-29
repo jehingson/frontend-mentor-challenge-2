@@ -201,50 +201,66 @@
 
 .join {
   background: var(--SoftBlue);
-  color: white;
-  padding: 3em 0;
+  margin-top: 2em;
+  width: 100%;
   text-align: center;
+  overflow-x: hidden;
 }
 .join small {
   text-transform: uppercase;
   letter-spacing: 4px;
+  color: white;
+  padding-top: 4em;
+  padding-bottom: 1em;
+  font-size: 0.6em;
+  display: inline-block;
 }
-@media screen and (min-width: 1024) {
-  .join small .title__h3 {
-    font-size: 1.7em;
-    max-width: 450px;
-    margin: 1em auto;
-  }
+.join .title__h2 {
+  color: white;
 }
 .join .form {
-  max-width: 450px;
-  margin: auto;
-}
-.join .form button {
-  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em;
 }
 .join .form__input {
-  width: 100%;
-  padding: iem;
-  box-sizing: border-box;
-  margin-bottom: 1em;
-  border-radius: 5px;
   border: none;
-  font-size: 1em;
-  outline: 0;
+  height: 35px;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  padding-left: 2em;
 }
-.join .form__input::-webkit-input-placeholder {
-  color: var(--lighGray);
+.join .form button {
+  margin-bottom: 1em;
 }
-@media screen and (min-width: 1024) {
-  .join .form {
-    display: flex;
-  }
-  .join .form__input {
-    flex-shrink: 0;
-    width: 70%;
-    margin-bottom: 0;
-  }
+
+.footer {
+  background: var(--VeryDarkBlue);
+  width: 100%;
+  text-align: center;
+}
+.footer__img {
+  margin-top: 2em;
+}
+.footer ul {
+  padding: 0;
+}
+.footer ul li {
+  list-style: none;
+  margin-bottom: 2em;
+}
+.footer ul li a {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--GrayishBlue);
+  letter-spacing: 2px;
+}
+.footer__social {
+  padding-bottom: 2em;
+}
+.footer__social img {
+  margin: auto 1em;
 }
 
 :root {

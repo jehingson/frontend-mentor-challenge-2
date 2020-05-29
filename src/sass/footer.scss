@@ -1,0 +1,29 @@
+.footer{
+    background: var(--VeryDarkBlue);
+    width: 100%;
+    text-align: center;
+    &__img{
+        margin-top: 2em;
+    }
+    ul{
+        padding: 0;
+        li{
+            list-style: none;
+            margin-bottom:2em;
+            a{
+                font-size: .9em;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: var(--GrayishBlue);
+                letter-spacing: 2px;
+            }
+        }
+    }
+    &__social{
+        padding-bottom: 2em;
+        img{
+            margin: auto 1em;
+        }
+    }
+    
+}
