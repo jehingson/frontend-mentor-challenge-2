@@ -31,4 +31,30 @@
             margin-bottom: 1em;
         }
     }
+    @media screen and (min-width: 768px){
+        &__grid{
+            max-width: 400px;
+          margin: 0 auto;
+          h4{
+            
+            padding: 0 2em 1em;
+            margin: 0 auto;
+          }
+          .form{
+            display: inline; 
+            
+
+            input{
+                width: 55%;
+                height: 40px;
+                padding-left: 1em;
+                margin-right: 1em ;
+            }
+            input[type="text"]:focus{
+                border: none;
+            } 
+        }
+        }
+        
+      }
 }

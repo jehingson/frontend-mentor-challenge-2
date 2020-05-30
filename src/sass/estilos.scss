@@ -15,6 +15,10 @@
     --lighGray: #e5e5e5;
     font-size: 18px;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
     font-family: 'Rubik', sans-serif;
@@ -76,4 +80,11 @@ body{
         box-shadow:  7px 7px 14px #dddddd, 
                     -7px -7px 14px #ffffff;
     }
+}
+input:hover{
+    border: none;
+}
+.boton__white:hover,
+.boton__blue:hover{
+    border: none;
 }

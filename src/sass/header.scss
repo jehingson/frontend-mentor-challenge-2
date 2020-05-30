@@ -1,10 +1,162 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    //border: 1px solid red;
-    padding: 1em 1em;
-    img{
-        align-self: center;
-    }
 
-}  
+input[type="checkbox"]{
+    display: none;
+    
+}
+input[type="checkbox"] ~ * #wrapper-r{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    .header{
+        overflow-x: hidden;
+       &__content{
+        position: fixed;
+        background: white;
+        width: 100%;
+        height: 60px;
+        padding:0;
+        z-index: 4;
+      
+        top: 0;
+          .flex{
+              display: flex;
+              justify-content: space-between;
+              width: 85%;
+              height: 35px;
+              margin: 2em auto;
+              .logo{
+                background: url('../images/logo-bookmark.svg') no-repeat ;
+                height: 30px;
+                width: 50%;
+                margin-top: -1em;
+              }
+              .icon{
+                background: url('../images/icon-hamburger.svg') no-repeat;
+                height: 20px;
+                width: 19px;
+                margin-top: -.8em;
+            }
+          }
+          ul{
+              display: none;
+          }
+
+       } 
+       @media screen and (min-width: 990px){
+           overflow-x: hidden;
+           &__content{
+               display: grid;
+               grid-template-columns: 350px auto;
+               margin: 0 auto;
+               .logo{
+                   font-size: .8em;
+               }
+                .icon{
+                    display: none;
+                }
+                ul{
+                    justify-self: end;
+                    display: block;
+                    display: flex;
+                    margin-top: .9em;
+                    margin-right: 2em;
+                    font-size: .8em;
+                    li{ 
+                        margin: 1em 2em;
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            letter-spacing: 2px;
+                            color: var(--VeryDarkBlue);
+                            font-size: .8em;
+                        }
+                    }
+                    button{
+                        border: none;
+                        background: var(--SoftRed);
+                        padding: 0 3em;
+                        height: 40px;
+                        margin-top: .4em;
+                        border-radius: 8px;
+                        color: white;
+                        letter-spacing: 2px;
+                        font-weight: 600;
+                    }
+                }
+           }
+       }
+    }
+}
+
+input[type="checkbox"]:checked ~ * #wrapper-r{
+    display: block;
+    .header{
+        &__content{
+        display: flex;
+        flex-direction: column;
+        background: var(--VeryDarkBlue);
+        opacity: .9;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: .5px solid rgba(134, 131, 131, 0.411);
+            width: 84%;
+            margin: 1em auto;
+            padding: 1.5em 0;
+            box-sizing: border-box;
+            .logo{
+                background: url('../images/logo-bookmark-white.svg') no-repeat ;
+                height: 30px;
+                width: 50%;
+               
+                //border: 1px solid red;
+            }
+            .icon{
+                background: url('../images/icon-close.svg') no-repeat;
+                height: 30px;
+                width: 19px;
+                margin-top: -.7em;
+            }
+        }
+        ul{
+            display: block;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            li{
+            list-style: none;
+            padding:1em 0;
+            border-bottom: .5px solid rgba(134, 131, 131, 0.411);
+            width: 85%;
+            margin: 0 auto;
+                a{
+                    text-decoration: none;
+                    color: var(--lighGray);
+                    letter-spacing: 3px;
+                }
+            }
+            button{
+                border: 2px solid white;
+                background: none;
+                width: 85%;
+                margin: 2em auto;
+                color: white;
+                padding: .8em 0;
+                font-size: 1em;
+                letter-spacing: 3px;
+                font-weight: 600;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+}
+}
+
+

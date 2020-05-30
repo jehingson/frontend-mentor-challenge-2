@@ -1,14 +1,19 @@
 .quiestions{
-
-        &__content{
-            
+        &__content{ 
         text-align: center;
+        padding-bottom: 2em;
+        overflow-x: hidden;
         }
         .carousel{
+          width: 85%;
+          margin: 0 auto;
             ul{
                 margin: 0;
                 padding: 0;
                 text-decoration: none;
+                li{
+                  padding:  1em 0;
+                }
               }
               &__click{
                   //border: 1px solid red;
@@ -23,6 +28,7 @@
                   label{
                     align-self: center;
                     justify-self: end;
+                   
                   }
                   svg{
                       cursor: pointer;
@@ -47,6 +53,12 @@
               input[id="other"]:checked ~ * #other-hidden{
                 display: block;
               }  
+              }
+              @media screen and (min-width: 768px){
+                &__grid{
+                  max-width: 500px;
+                  margin: 0 auto;
+                }
               }
         }
        

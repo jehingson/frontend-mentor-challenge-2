@@ -3,6 +3,7 @@
     padding: 4em 1em;
     //border: 1px solid red;
     &__content{
+
         flex: 1;
         //border: 1px solid blue;
         padding-top: 2em;
@@ -18,5 +19,44 @@ box-shadow:  7px 7px 14px #f3f3f3,
         img{
             padding-bottom: 1em;
         }
+        button{
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 860px){
+        &__grid{
+            display: grid;
+            column-gap: 2em;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-top: 3em;
+            padding-bottom: 5em;
+        }
+        &__content{
+           
+            .dots{
+                width: 100%;
+            }
+            button{
+                width: 85%;
+                margin: 0 auto;
+            }
+        }
+        &__content:first-child{   
+            align-self: start;
+            margin-top: -2em;
+            position: relative;
+            .dots{
+                width: 100%;
+            }
+        }
+        &__content:nth-child(2n){
+            align-self: center;
+        }
+        &__content:last-child{
+            align-self: end;
+            margin-bottom: -4em;
+            position: relative;
+        }     
     }
 }
