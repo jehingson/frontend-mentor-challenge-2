@@ -582,6 +582,7 @@ input[type=checkbox]:checked ~ * #wrapper-r .header__content ul button {
   margin-top: 2em;
 }
 .footer ul {
+  margin-top: 1em;
   padding: 0;
 }
 .footer ul li {
